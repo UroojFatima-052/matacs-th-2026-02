@@ -1,0 +1,6 @@
+.env
+__pycache__/
+# proposal text and AI output (contain sample text, not committed)
+prototype/samples/
+prototype/facts/
+prototype/output/
