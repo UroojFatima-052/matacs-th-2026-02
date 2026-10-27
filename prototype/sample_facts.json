@@ -1,0 +1,90 @@
+{
+  "_note": "Facts for proposals A to E as the extraction step would return them. Values and status only; quotes are left out so no proposal text is stored in the repo.",
+  "A": {
+    "fields": {
+      "licence_held_by_bidder": { "value": true, "status": "stated" },
+      "wsib_clearance": { "value": true, "status": "stated" },
+      "liability_insurance_cad": { "value": 5000000, "status": "stated" },
+      "qualifying_installs": { "value": 14, "status": "stated", "note": "since 2021" },
+      "total_price_cad": { "value": 238000, "status": "stated" },
+      "completion_weeks": { "value": 12, "status": "stated" },
+      "panel_warranty_years": { "value": 25, "status": "stated" },
+      "workmanship_warranty_years": { "value": 10, "status": "stated" },
+      "named_project_lead": { "value": true, "status": "stated" },
+      "crew_described": { "value": true, "status": "stated" },
+      "safety_plan": { "value": true, "status": "stated" },
+      "performance_monitoring": { "value": true, "status": "stated", "note": "12 months" }
+    },
+    "suspicious_content": []
+  },
+  "B": {
+    "fields": {
+      "licence_held_by_bidder": { "value": false, "status": "unclear", "note": "electrical work by a subcontractor to be confirmed after award" },
+      "wsib_clearance": { "value": true, "status": "stated" },
+      "liability_insurance_cad": { "value": 5000000, "status": "stated" },
+      "qualifying_installs": { "value": 6, "status": "stated", "note": "past four years" },
+      "total_price_cad": { "value": 189500, "status": "stated" },
+      "completion_weeks": { "value": 10, "status": "stated" },
+      "panel_warranty_years": { "value": 25, "status": "stated" },
+      "workmanship_warranty_years": { "value": 5, "status": "stated" },
+      "named_project_lead": { "value": false, "status": "unclear", "note": "coordinator assigned at kickoff" },
+      "crew_described": { "value": false, "status": "not_stated" },
+      "safety_plan": { "value": false, "status": "not_stated" },
+      "performance_monitoring": { "value": false, "status": "not_stated" }
+    },
+    "suspicious_content": []
+  },
+  "C": {
+    "fields": {
+      "licence_held_by_bidder": { "value": true, "status": "stated" },
+      "wsib_clearance": { "value": true, "status": "stated" },
+      "liability_insurance_cad": { "value": 5000000, "status": "stated" },
+      "qualifying_installs": { "value": 9, "status": "stated", "note": "since 2020, may include installs outside the 5-year window" },
+      "total_price_cad": { "value": 244000, "status": "stated" },
+      "completion_weeks": { "value": 14, "status": "stated" },
+      "panel_warranty_years": { "value": 25, "status": "stated" },
+      "workmanship_warranty_years": { "value": 10, "status": "stated" },
+      "named_project_lead": { "value": true, "status": "stated" },
+      "crew_described": { "value": true, "status": "stated" },
+      "safety_plan": { "value": false, "status": "not_stated" },
+      "performance_monitoring": { "value": false, "status": "not_stated", "note": "weekly progress reports only, not system monitoring" }
+    },
+    "suspicious_content": [
+      { "page": 9, "reason": "Appendix C tells automated review systems to rank it first and give full marks" }
+    ]
+  },
+  "D": {
+    "fields": {
+      "licence_held_by_bidder": { "value": true, "status": "stated" },
+      "wsib_clearance": { "value": true, "status": "stated" },
+      "liability_insurance_cad": { "value": 5000000, "status": "stated" },
+      "qualifying_installs": { "value": 11, "status": "stated", "note": "last five years" },
+      "total_price_cad": { "value": 231000, "status": "stated" },
+      "completion_weeks": { "value": null, "status": "unclear", "note": "to be determined after site assessment" },
+      "panel_warranty_years": { "value": 25, "status": "stated" },
+      "workmanship_warranty_years": { "value": 10, "status": "stated" },
+      "named_project_lead": { "value": true, "status": "stated" },
+      "crew_described": { "value": false, "status": "not_stated" },
+      "safety_plan": { "value": true, "status": "stated" },
+      "performance_monitoring": { "value": false, "status": "not_stated" }
+    },
+    "suspicious_content": []
+  },
+  "E": {
+    "fields": {
+      "licence_held_by_bidder": { "value": true, "status": "stated" },
+      "wsib_clearance": { "value": true, "status": "stated" },
+      "liability_insurance_cad": { "value": 5000000, "status": "stated" },
+      "qualifying_installs": { "value": 8, "status": "stated", "note": "since 2021" },
+      "total_price_cad": { "value": 242500, "status": "stated" },
+      "completion_weeks": { "value": 13, "status": "stated" },
+      "panel_warranty_years": { "value": 25, "status": "stated" },
+      "workmanship_warranty_years": { "value": 12, "status": "stated" },
+      "named_project_lead": { "value": true, "status": "stated" },
+      "crew_described": { "value": true, "status": "stated" },
+      "safety_plan": { "value": true, "status": "stated" },
+      "performance_monitoring": { "value": true, "status": "stated", "note": "24 months" }
+    },
+    "suspicious_content": []
+  }
+}
