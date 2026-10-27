@@ -6,7 +6,7 @@
 
 **Everything else is plain code:** getting text out of the PDF, checking the AI's quotes, the suspicious-text scan, the mandatory pass/fail checks, the scoring maths and building the ranked list.
 
-I drew the line there because a pass/fail or a score has to be the same every time and has to be explainable to a bidder who asks "why did I lose?". An AI can give two different scores for the same input, can't show its working reliably, and can be talked into things by text inside the proposal. Code can't. I have used the same split before in a past project: AI for extraction, all calculations in code.
+I drew the line there because a pass/fail or a score has to be the same every time and has to be explainable to a bidder who asks "why did I lose?". An AI can give two different scores for the same input, can't show its working reliably, and can be talked into things by text inside the proposal. Code can't. I used the same split in my 10Pearls Women Tech Quest 2026 project (a utility bill decoder): Gemini read the bills, and Python did all the maths, cleanup and self-checks.
 
 ## 2. Consistency and explainability
 
