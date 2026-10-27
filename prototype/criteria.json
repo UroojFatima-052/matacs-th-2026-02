@@ -1,0 +1,42 @@
+{
+  "category": "Commercial Solar Installation",
+  "version": "v1",
+  "project": "150 kW rooftop system on a warehouse in Windsor, Ontario. Budget ceiling $260,000 CAD. Complete within 16 weeks of award.",
+  "fields": {
+    "licence_held_by_bidder": "true/false: Does the bidding company itself hold an Ontario electrical contractor licence? A subcontractor's licence does not count; if the work is given to a subcontractor, set false and explain in note.",
+    "licence_number": "string: The licence number, if given.",
+    "wsib_clearance": "true/false: Does the bidder state current WSIB clearance?",
+    "liability_insurance_cad": "number: Amount of liability insurance stated.",
+    "qualifying_installs": "number: Number of commercial solar installs of 100 kW or more. In note, give the time period the proposal states (e.g. 'since 2020').",
+    "total_price_cad": "number: Total price in CAD. In note, say what is included if stated (permits, utility connection).",
+    "completion_weeks": "number: Weeks from award to completion.",
+    "panel_warranty_years": "number",
+    "workmanship_warranty_years": "number",
+    "named_project_lead": "true/false: Is a specific project lead/manager named or committed? 'Assigned at kickoff' counts as unclear.",
+    "crew_described": "true/false: Is the crew described (size or certification)?",
+    "safety_plan": "true/false: Is a site safety plan included?",
+    "performance_monitoring": "true/false: Is ongoing system performance monitoring offered? Put the duration in note. Progress reports during the build do not count."
+  },
+  "mandatory": [
+    {
+      "id": "licence",
+      "label": "Ontario electrical contractor licence held by the bidder",
+      "checks": [{ "field": "licence_held_by_bidder", "equals": true }]
+    },
+    {
+      "id": "wsib_insurance",
+      "label": "WSIB clearance and $5M liability insurance",
+      "checks": [
+        { "field": "wsib_clearance", "equals": true },
+        { "field": "liability_insurance_cad", "min": 5000000 }
+      ]
+    }
+  ],
+  "weighted": [
+    { "id": "experience", "weight": 30, "method": "higher_is_better", "field": "qualifying_installs" },
+    { "id": "price", "weight": 25, "method": "lower_is_better_under_limit", "field": "total_price_cad", "limit": 260000 },
+    { "id": "timeline", "weight": 15, "method": "lower_is_better_under_limit", "field": "completion_weeks", "limit": 16 },
+    { "id": "warranty", "weight": 15, "method": "average_higher_is_better", "fields": ["panel_warranty_years", "workmanship_warranty_years"] },
+    { "id": "team", "weight": 15, "method": "checklist", "fields": ["named_project_lead", "crew_described", "safety_plan", "performance_monitoring"] }
+  ]
+}
